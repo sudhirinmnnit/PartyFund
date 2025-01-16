@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Political Parties</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Select a Political Party</h1>
+  <div class="parties">
+    <div class="party" onclick="showModal('BJP')">
+      <img src="images/bjp.jpg" alt="BJP">
+      <p>BJP</p>
+    </div>
+    <div class="party" onclick="showModal('IND')">
+      <img src="images/ind.jpg" alt="IND">
+      <p>IND</p>
+    </div>
+    <!-- Add more parties as needed -->
+  </div>
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+</body>
+</html>
+
