@@ -3,29 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Political Parties</title>
+  <title>Donate for Indian Democracy</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Select a Political Party</h1>
-  <div class="parties">
-    <div class="party" onclick="showModal('BJP')">
-      <img src="images/bjp.jpg" alt="BJP">
-      <p>BJP</p>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">DemocracyFund</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="why-donate.html">Why Donate</a></li>
+      <li><a href="parties.html">Political Parties</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Empower India's Democracy</h1>
+      <p class="tagline">Donate for Clean, Accountable, and Transparent Elections</p>
+      <button class="donate-button">Donate Now</button>
     </div>
-    <div class="party" onclick="showModal('IND')">
-      <img src="images/ind.jpg" alt="IND">
-      <p>IND</p>
+  </header>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-item">
+      <img src="images/clean-elections.png" alt="Clean Elections">
+      <h3>Transparent Elections</h3>
+      <p>Every rupee brings us closer to fair elections in India.</p>
     </div>
-    <!-- Add more parties as needed -->
-  </div>
-  <div id="modal" class="modal hidden">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <p id="modal-text"></p>
+    <div class="feature-item">
+      <img src="images/community-support.png" alt="Community Support">
+      <h3>Community Empowerment</h3>
+      <p>Support the voices of millions to shape their future.</p>
     </div>
-  </div>
+    <div class="feature-item">
+      <img src="images/accountability.png" alt="Accountability">
+      <h3>Accountability</h3>
+      <p>Enable political leaders to work for the people, not power.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Get In Touch</h2>
+    <p>Phone: <a href="tel:+916396045866">+91 6396045866</a></p>
+    <p>Email: <a href="mailto:sudhirinmnnit@gmail.com">example@domain.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sudhkuma/">Connect with us</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Donate for Indian Democracy. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
