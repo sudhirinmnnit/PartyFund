@@ -4,35 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate for Democracy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <div class="logo">Democracy Fund</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="why-donate.html">Why Donate</a></li>
-                <li><a href="political-parties.html">Political Parties</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">Democracy Fund</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="why-donate.html">Why Donate</a></li>
+                    <li><a href="political-parties.html">Political Parties</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <button class="donate-now" onclick="window.location.href='donate-now.html'">Donate Now</button>
+        </div>
     </header>
-    <main>
-        <section class="hero">
-            <h1>Donate for Democracy</h1>
-            <p>Empowering Clean and Accountable Elections</p>
-            <div class="cta">
-                <a href="donate.html" class="donate-btn">Donate Now</a>
-                <div class="party-slider">
-                    <img src="party1.png" alt="Party 1">
-                    <img src="party2.png" alt="Party 2">
-                    <img src="party3.png" alt="Party 3">
-                </div>
-            </div>
-        </section>
-    </main>
+
+    <!-- Image Slider Section -->
+    <section class="image-slider">
+        <div class="slider">
+            <div class="slide">Party 1</div>
+            <div class="slide">Party 2</div>
+            <div class="slide">Party 3</div>
+            <div class="slide">Party 4</div>
+            <div class="slide">Party 5</div>
+            <div class="slide">Party 6</div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Donate for Democracy. All Rights Reserved.</p>
     </footer>
