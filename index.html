@@ -3,61 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donate for Democracy</title>
+  <title>Donate for Indian Democracy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">Democracy Fund</div>
-    <div class="navigation">
-    <a href="index.html" class="active">Home</a>
-    <a href="why-donate.html">Why Donate</a>
-    <a href="parties.html">Political Parties</a>
-    <a href="careers.html">Careers</a>
-    <a href="about-us.html">About Us</a>
-</div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Empower India's Democracy</h1>
-      <p class="tagline">Donate for Clean, Accountable, and Transparent Elections</p>
-      <button class="donate-button">Donate Now</button>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Democracy Fund Logo">
     </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why-donate.html">Why Donate</a></li>
+        <li><a href="parties.html">Political Parties</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Features Section -->
-  <section class="features">
-    <div class="feature-item">
-      <img src="images/clean-elections.png" alt="Clean Elections">
-      <h3>Transparent Elections</h3>
-      <p>Every rupee brings us closer to fair elections in India.</p>
+  <!-- Hero Section -->
+  <section class="hero-slider">
+    <div class="slider">
+      <div class="slide active">
+        <img src="banner1.jpg" alt="Positive Energy for Democracy">
+        <div class="slide-content">
+          <h2>Positive Energy</h2>
+          <p>Empowering India's Elections</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="banner2.jpg" alt="Clean Elections">
+        <div class="slide-content">
+          <h2>Clean Elections</h2>
+          <p>Every Donation Matters</p>
+        </div>
+      </div>
+      <!-- Add more slides as needed -->
     </div>
-    <div class="feature-item">
-      <img src="images/community-support.png" alt="Community Support">
-      <h3>Community Empowerment</h3>
-      <p>Support the voices of millions to shape their future.</p>
-    </div>
-    <div class="feature-item">
-      <img src="images/accountability.png" alt="Accountability">
-      <h3>Accountability</h3>
-      <p>Enable political leaders to work for the people, not power.</p>
+    <div class="slider-controls">
+      <button class="prev">◀</button>
+      <button class="next">▶</button>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Get In Touch</h2>
-    <p>Phone: <a href="tel:+916396045866">+91 6396045866</a></p>
-    <p>Email: <a href="mailto:sudhirinmnnit@gmail.com">sudhirinmnnit@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sudhkuma/">Connect with us</a></p>
+  <!-- Discover More Section -->
+  <section class="discover-more">
+    <h2>Discover More</h2>
+    <div class="grid">
+      <div class="grid-item">
+        <img src="motorist.jpg" alt="Motorist">
+        <h3>Motorist</h3>
+      </div>
+      <div class="grid-item">
+        <img src="households.jpg" alt="Households">
+        <h3>Households</h3>
+      </div>
+      <div class="grid-item">
+        <img src="business-partners.jpg" alt="Business Partners">
+        <h3>Business Partners</h3>
+      </div>
+      <div class="grid-item">
+        <img src="careers.jpg" alt="Careers">
+        <h3>Careers</h3>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <p>© 2025 Donate for Indian Democracy. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
+      <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="https://linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
