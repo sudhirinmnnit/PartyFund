@@ -4,83 +4,185 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donate for Indian Democracy</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+    }
+
+    /* Header */
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('background-image.jpg') no-repeat center center/cover;
+      color: white;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    .hero button {
+      background-color: #ff9900;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #cc7a00;
+    }
+
+    /* Sections */
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .tiles {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .tile {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .tile:hover {
+      transform: translateY(-5px);
+    }
+
+    .tile img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .tile h4 {
+      margin: 1rem 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="header">
-    <div class="logo">
-      <img src="logo.png" alt="Democracy Fund Logo">
-    </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="why-donate.html">Why Donate</a></li>
-        <li><a href="parties.html">Political Parties</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero-slider">
-    <div class="slider">
-      <div class="slide active">
-        <img src="banner1.jpg" alt="Positive Energy for Democracy">
-        <div class="slide-content">
-          <h2>Positive Energy</h2>
-          <p>Empowering India's Elections</p>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="banner2.jpg" alt="Clean Elections">
-        <div class="slide-content">
-          <h2>Clean Elections</h2>
-          <p>Every Donation Matters</p>
-        </div>
-      </div>
-      <!-- Add more slides as needed -->
-    </div>
-    <div class="slider-controls">
-      <button class="prev">◀</button>
-      <button class="next">▶</button>
-    </div>
-  </section>
+<header>
+  <h1>Donate for Indian Democracy</h1>
+  <nav>
+    <a href="#why-donate">Why Donate</a>
+    <a href="#political-parties">Political Parties</a>
+    <a href="#careers">Careers</a>
+    <a href="#about-us">About Us</a>
+  </nav>
+</header>
 
-  <!-- Discover More Section -->
-  <section class="discover-more">
-    <h2>Discover More</h2>
-    <div class="grid">
-      <div class="grid-item">
-        <img src="motorist.jpg" alt="Motorist">
-        <h3>Motorist</h3>
-      </div>
-      <div class="grid-item">
-        <img src="households.jpg" alt="Households">
-        <h3>Households</h3>
-      </div>
-      <div class="grid-item">
-        <img src="business-partners.jpg" alt="Business Partners">
-        <h3>Business Partners</h3>
-      </div>
-      <div class="grid-item">
-        <img src="careers.jpg" alt="Careers">
-        <h3>Careers</h3>
-      </div>
-    </div>
-  </section>
+<section class="hero">
+  <h2>Empower India's Democracy</h2>
+  <p>Your contribution makes elections clean and accountable.</p>
+  <button>Donate Now</button>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 Donate for Indian Democracy. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
-      <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
-      <a href="https://linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-    </div>
-  </footer>
+<section id="why-donate" class="section">
+  <h3>Why Donate?</h3>
+  <p>Your donation supports transparency and clean governance in India.</p>
+</section>
 
-  <script src="script.js"></script>
+<section id="political-parties" class="section">
+  <h3>Political Parties</h3>
+  <div class="tiles">
+    <div class="tile">
+      <img src="bjp-logo.jpg" alt="BJP">
+      <h4>BJP</h4>
+      <p>Learn more about their manifesto and vision.</p>
+    </div>
+    <div class="tile">
+      <img src="congress-logo.jpg" alt="Congress">
+      <h4>Congress</h4>
+      <p>Learn more about their manifesto and vision.</p>
+    </div>
+    <div class="tile">
+      <img src="aap-logo.jpg" alt="AAP">
+      <h4>AAP</h4>
+      <p>Learn more about their manifesto and vision.</p>
+    </div>
+  </div>
+</section>
+
+<section id="careers" class="section">
+  <h3>Careers</h3>
+  <p>Join us to drive change and make a difference.</p>
+</section>
+
+<section id="about-us" class="section">
+  <h3>About Us</h3>
+  <p>We are dedicated to empowering democracy through public contributions.</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Donate for Indian Democracy. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
