@@ -7,38 +7,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <div class="container">
-            <div class="logo">Democracy Fund</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="why-donate.html">Why Donate</a></li>
-                    <li><a href="political-parties.html">Political Parties</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                </ul>
-            </nav>
-            <button class="donate-now" onclick="window.location.href='donate-now.html'">Donate Now</button>
-        </div>
+        <div class="logo">Democracy Fund</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="why-donate.html">Why Donate</a></li>
+                <li><a href="political-parties.html">Political Parties</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+        <a href="donate-now.html" class="donate-btn">Donate Now</a>
     </header>
 
-    <!-- Image Slider Section -->
-    <section class="image-slider">
-        <div class="slider">
-            <div class="slide">Party 1</div>
-            <div class="slide">Party 2</div>
-            <div class="slide">Party 3</div>
-            <div class="slide">Party 4</div>
-            <div class="slide">Party 5</div>
-            <div class="slide">Party 6</div>
+    <section class="slider">
+        <div class="slides">
+            <div class="slide" id="slide1">
+                <img src="party1.jpg" alt="Party 1">
+                <div class="slide-caption">Party 1</div>
+            </div>
+            <div class="slide" id="slide2">
+                <img src="party2.jpg" alt="Party 2">
+                <div class="slide-caption">Party 2</div>
+            </div>
+            <div class="slide" id="slide3">
+                <img src="party3.jpg" alt="Party 3">
+                <div class="slide-caption">Party 3</div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
         </div>
     </section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Donate for Democracy. All Rights Reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 Donate for Democracy. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
