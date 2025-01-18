@@ -1,61 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Now</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate for Indian Democracy - Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f0e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    /* Header */
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Container */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin-top: 120px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+    }
+
+    /* Message Section */
+    .message {
+      width: 48%;
+      padding: 25px;
+      background-color: #d9af6d;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .message h2 {
+      font-size: 2.5rem;
+      color: #002366;
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }
+
+    .message p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .message p strong {
+      font-size: 1.5rem;
+      color: #b97d44;
+    }
+
+    .message p a {
+      color: #b97d44;
+      text-decoration: none;
+    }
+
+    .message p a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Details Section */
+    .contact {
+      width: 48%;
+      text-align: center;
+      padding: 20px;
+      background-color: #003366;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+
+    .contact img {
+      max-width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .contact ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      font-size: 1.2rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .contact ul li {
+      margin: 15px 0;
+    }
+
+    .contact ul li a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    .contact ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 1rem;
+      color: #003366;
+    }
+
+    footer p {
+      margin: 10px 0;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Democracy Fund</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="why-donate.html">Why Donate</a></li>
-                <li><a href="political-parties.html">Political Parties</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="donate-page">
-            <h2>Donate to Support Democracy</h2>
-            <div class="party-grid">
-                <div class="party">
-                    <img src="party1.png" alt="Party 1">
-                    <p>Party 1</p>
-                </div>
-                <div class="party">
-                    <img src="party2.png" alt="Party 2">
-                    <p>Party 2</p>
-                </div>
-                <div class="party">
-                    <img src="party3.png" alt="Party 3">
-                    <p>Party 3</p>
-                </div>
-                <div class="party">
-                    <img src="party4.png" alt="Party 4">
-                    <p>Party 4</p>
-                </div>
-                <div class="party">
-                    <img src="party5.png" alt="Party 5">
-                    <p>Party 5</p>
-                </div>
-                <div class="party">
-                    <img src="party6.png" alt="Party 6">
-                    <p>Party 6</p>
-                </div>
-                <div class="party">
-                    <img src="other.png" alt="Donate for Other">
-                    <p>Other</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Donate for Democracy. All Rights Reserved.</p>
-    </footer>
+
+  <!-- Header with Navigation -->
+  <header>
+    <h1>Donate for Indian Democracy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#why-donate">Why Donate</a>
+      <a href="#political-parties">Political Parties</a>
+      <a href="#careers">Careers</a>
+      <a href="#about-us">About Us</a>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Message Section -->
+    <div class="message">
+      <h2>Your Contribution Can Make a Difference</h2>
+      <p>
+        Hello, I’m <strong>Sudhir Kumar</strong>, and I’m here to guide you through the donation process for India’s democratic future. Your donation, whether large or small, has the power to support transparency, honest elections, and accountable governance. It’s not just about contributing money; it’s about making a lasting impact for the future of India.
+      </p>
+      <p>
+        By donating, you’ll be helping us foster a cleaner, more accountable democracy, ensuring that elections reflect the true will of the people. This is your opportunity to support positive change and build a democratic system where integrity is at the core of every election.
+      </p>
+      <p><strong>Feel free to reach out to me if you have any questions or require further assistance with your donation.</strong></p>
+    </div>
+
+    <!-- Contact Details Section -->
+    <div class="contact">
+      <img src="your-photo.jpg" alt="Sudhir Kumar">
+      <ul>
+        <li><strong>Phone:</strong> <a href="tel:+6396045866">6396045866</a></li>
+        <li><strong>Email:</strong> <a href="mailto:sudhirinmnnit@gmail.com">sudhirinmnnit@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sudhkuma/" target="_blank">LinkedIn Profile</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Donate for Indian Democracy. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
+
